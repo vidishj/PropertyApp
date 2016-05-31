@@ -21,7 +21,7 @@
                 <div><img ng-src="{{ property.mainImage }}" width="100%"/></div>
                 <div style=" width: 100%; background: #fff; height: 40px; ">
                     <span style="margin-left: 10px;">{{ property.price }}</span>
-                    <button ng-click="addProperty(property.id)">Add Property</button>
+                    <button class="add" ng-click="addProperty(property.id)">Add Property</button>
                 </div>
             </div>  
         </div>
@@ -35,7 +35,7 @@
                     <div><img ng-src="{{ savedProperty.mainImage }}" width="100%"/></div>
                     <div style=" width: 100%; background: #fff; height: 40px; ">
                         <span style="margin-left: 10px;">{{ savedProperty.price }}</span>
-                        <button ng-click="removeProperty(savedProperty.id)">Remove Property</button>
+                        <button class="delete" ng-click="removeProperty(savedProperty.id)">Remove Property</button>
                     </div>
                 </div>  
         </div>

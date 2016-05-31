@@ -15,13 +15,16 @@ h2 {
 ul li {
   list-style: none; }
 
+/**************** Main Styles ****************/
 .container {
   width: 800px;
   margin: 10px auto; }
 
 .property-container {
   float: left;
-  margin: auto 45px; }
+  margin: auto 45px;
+  width: 302px;
+  max-width: 302px; }
 
 .property-listing {
   width: 300px;
@@ -37,12 +40,30 @@ ul li {
   border-radius: 5px;
   margin-top: 15px; }
 
-button {
-  padding: 7px;
+button[class="add"] {
+  padding: 2px;
   margin-left: 110px;
   border: 1px solid #000;
-  background: #fff;
+  background: #6AA91E;
   outline: none;
-  border-radius: 5px; }
+  border-radius: 5px;
+  display: none;
+  color: #fff; }
+
+button[class="delete"] {
+  padding: 2px;
+  margin-left: 110px;
+  border: 1px solid #000;
+  background: #EA3B23;
+  outline: none;
+  border-radius: 5px;
+  display: none;
+  color: #fff; }
+
+.property-listing:hover button {
+  display: inline; }
+
+.saved-listing:hover button {
+  display: inline; }
 
 /*# sourceMappingURL=style.css.map */
