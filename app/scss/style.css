@@ -1,5 +1,57 @@
-/* line 3, /Users/vidishj/Documents/Projects/Realestate/app/scss/style.scss */
+/* line 4, /Users/vidishj/Documents/Projects/Realestate/app/scss/style.scss */
 body {
-  background: #f6f6f6; }
+  background: #f6f6f6;
+  color: #000;
+  font-family: Tahoma, Geneva, sans-serif;
+  font-size: 14px;
+  margin: 0;
+  padding: 0; }
+
+/* line 13, /Users/vidishj/Documents/Projects/Realestate/app/scss/style.scss */
+h2 {
+  text-align: center; }
+
+/* line 17, /Users/vidishj/Documents/Projects/Realestate/app/scss/style.scss */
+.clearfix {
+  clear: both; }
+
+/* line 21, /Users/vidishj/Documents/Projects/Realestate/app/scss/style.scss */
+ul li {
+  list-style: none; }
+
+/* line 25, /Users/vidishj/Documents/Projects/Realestate/app/scss/style.scss */
+.container {
+  width: 800px;
+  margin: 0 auto; }
+
+/* line 30, /Users/vidishj/Documents/Projects/Realestate/app/scss/style.scss */
+.property-container {
+  float: left;
+  margin: 0 15px 0 15px; }
+
+/* line 35, /Users/vidishj/Documents/Projects/Realestate/app/scss/style.scss */
+.property-listing {
+  width: 300px;
+  height: 310px;
+  border: 1px solid #D3D3D3;
+  border-radius: 5px;
+  margin-top: 15px; }
+
+/* line 43, /Users/vidishj/Documents/Projects/Realestate/app/scss/style.scss */
+.saved-listing {
+  width: 300px;
+  height: 310px;
+  border: 1px solid #D3D3D3;
+  border-radius: 5px;
+  margin-top: 15px; }
+
+/* line 51, /Users/vidishj/Documents/Projects/Realestate/app/scss/style.scss */
+button {
+  padding: 7px;
+  margin-left: 110px;
+  border: 1px solid #000;
+  background: #fff;
+  outline: none;
+  border-radius: 5px; }
 
 /*# sourceMappingURL=style.css.map */

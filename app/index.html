@@ -1,20 +1,52 @@
 <!doctype html>
-<html>
+<html ng-app="PropertySaver">
 <head>
     <meta charset="UTF-8">
     <title>Property App</title>
     
     <!-- Stylesheet -->
     <link rel="stylesheet" href="css/style.css">
-    
-    
+       
 </head>
-<body>
 
+<body ng-controller="PropertyController">
+    
+    <div class="container">
+        <div class="property-container">
+            <h2>Results</h2>  
+            <div class="property-listing" ng-repeat="property in properties">
+                <div style="background: {{ property.agency.brandingColors.primary }}; width: 100%; height: 40px; ">
+                    <img ng-src="{{ property.agency.logo }}" alt="Property Image" width="120" align="left" style="margin: 6px 0 0 6px;"/>
+                </div>
+                <div><img ng-src="{{ property.mainImage }}" width="100%"/></div>
+                <div style=" width: 100%; background: #fff; height: 40px; ">
+                    <span style="margin-left: 10px;">{{ property.price }}</span>
+                    <button ng-click="addProperty(property.id)">Add Property</button>
+                </div>
+            </div>  
+        </div>
+        
+        <div class="property-container">
+            <h2>Saved Properties</h2>  
+                <div class="saved-listing" ng-repeat="savedProperty in savedProperties">
+                    <div style="background: {{ savedProperty.agency.brandingColors.primary }}; width: 100%; height: 40px; ">
+                       <img ng-src="{{ savedProperty.agency.logo }}" alt="Property Image" width="120" align="left" style="margin: 6px 0 0 6px;"/>
+                    </div>
+                    <div><img ng-src="{{ savedProperty.mainImage }}" width="100%"/></div>
+                    <div style=" width: 100%; background: #fff; height: 40px; ">
+                        <span style="margin-left: 10px;">{{ savedProperty.price }}</span>
+                        <button ng-click="removeProperty(savedProperty.id)">Remove Property</button>
+                    </div>
+                </div>  
+        </div>
+        <div class="clearfix">
+        </div>
+    </div>
 
     <!-- Scripts -->
     <script type="text/javascript" src="scripts/angular.min.js"></script>
     <script type="text/javascript" src="scripts/app.js"></script>
     <script type="text/javascript" src="controller/controller.js"></script>
 </body>
+
 </html>

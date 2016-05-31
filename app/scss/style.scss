@@ -1,5 +1,58 @@
 $bg: #f6f6f6;
+$fg: #000;
 
 body {
     background: $bg;
+    color: $fg;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    text-align: center;
+}
+
+.clearfix {
+    clear: both;
+}
+
+ul li {
+    list-style: none;
+}
+
+.container {
+    width: 800px;
+    margin: 0 auto;
+}
+
+.property-container {
+    float: left;
+    margin: 0 15px 0 15px;
+}
+
+.property-listing {
+    width: 300px; 
+    height: 310px; 
+    border: 1px solid #D3D3D3; 
+    border-radius: 5px; 
+    margin-top:  15px; 
+}
+
+.saved-listing {
+    width: 300px; 
+    height: 310px; 
+    border: 1px solid #D3D3D3; 
+    border-radius: 5px; 
+    margin-top:  15px;
+}
+
+button {
+    padding: 7px; 
+    margin-left: 110px;
+    border: 1px solid #000;
+    background: #fff;
+    outline: none;
+    border-radius: 5px;
 }
