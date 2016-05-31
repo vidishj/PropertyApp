@@ -22,12 +22,12 @@ ul li {
 /* line 25, /Users/vidishj/Documents/Projects/Realestate/app/scss/style.scss */
 .container {
   width: 800px;
-  margin: 0 auto; }
+  margin: 10px auto; }
 
 /* line 30, /Users/vidishj/Documents/Projects/Realestate/app/scss/style.scss */
 .property-container {
   float: left;
-  margin: 0 15px 0 15px; }
+  margin: auto 45px; }
 
 /* line 35, /Users/vidishj/Documents/Projects/Realestate/app/scss/style.scss */
 .property-listing {
