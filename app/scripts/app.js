@@ -1,1 +1,1 @@
-var propertyApp = angular.module('PropertySaver', []);
+angular.module('PropertySaver', []);
