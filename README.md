@@ -1,15 +1,15 @@
 # PropertyApp
 This Realestate Property Saver application displays the listed 	properties and you can select any property and add it to your own Saved Property List. You can also remove a property from 	the Saved Property List.
 
-1.	Getting Started
+1.	Getting Started:
 	You can fork the project from my GitHub account - https://github.com/vidishj/PropertyApp
 
-2.	Run the application
+2.	Run the application:
 	To run the application, you can just double click on ‘index.html’.  
 	
 	Note: The application might not run as expected if the user does not save it on the local server because some browsers (mainly Google Chrome) do 	not support XMLHttpRequest cross origin requests.
  
-3.	Directory Layout
+3.	Directory Layout:
 	app/
 		controller/
 			controller.js  - -> Application controller file
